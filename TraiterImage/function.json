@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "name": "InputBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "incoming/{name}",
+      "connection": "saaqdemostorage_STORAGE"
+    },
+    {
+      "name": "OutputBlob",
+      "type": "blob",
+      "direction": "out",
+      "path": "cropped/{name}",
+      "connection": "saaqdemostorage_STORAGE"
+    }
+  ]
+}
